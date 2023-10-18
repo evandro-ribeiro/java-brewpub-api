@@ -6,7 +6,4 @@ import org.springframework.stereotype.Repository;
 import me.dio.domain.model.Cliente;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<Cliente, Long> {
-
-    // boolean existsByClienteId(Long id);
-}
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {}
