@@ -1,11 +1,12 @@
 package me.dio.domain.repository;
 
-import me.dio.domain.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+import me.dio.domain.model.Cliente;
 
-    boolean existsByAccountNumber(String accountNumber);
+@Repository
+public interface ClienteRepository extends JpaRepository<Cliente, Long> {
+
+    // boolean existsByClienteId(Long id);
 }
